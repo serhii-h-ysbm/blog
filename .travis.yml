@@ -9,7 +9,6 @@ addons:
 install:
   - cp .env.testing .env
   - travis_retry composer install --no-interaction --prefer-dist --no-suggest
-  - php artisan key:generate
   - php artisan dusk:install
 
 before_script:
