@@ -12,6 +12,5 @@
 */
 
 Route::get('/', function () {
-    $date = \Carbon\Carbon::tomorrow();
-    dd($date->addMinutes(2));
+    return view('welcome');
 });
